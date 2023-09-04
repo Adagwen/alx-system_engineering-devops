@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -printf "%T@ %p\n" | sort -nr | head -n 10 > newest_files.txt
+awk 'NR==FNR{a[$0]++;next} a[$0]==1' -
