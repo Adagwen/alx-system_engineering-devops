@@ -1,2 +1,2 @@
 #!/bin/bash
-$(whoami) "Hello $current_user"
+echo "Hello $USER"
